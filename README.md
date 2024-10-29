@@ -58,8 +58,10 @@ server {
 
 sudo ln -s /etc/nginx/sites-available/chatwoot /etc/nginx/sites-enabled
 
-
-sudo certbot --nginx --email armando@gmail.com --redirect --agree-tos -d chatwoot.dagestao.online
+sudo nginx -t
+sudo service nginx restart
+sudo apt install python3-certbot-nginx
+sudo certbot --nginx
 
 cd /opt/chatwoot
 
