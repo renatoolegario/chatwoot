@@ -1,3 +1,5 @@
+https://www.chatwoot.com/docs/self-hosted/deployment/docker/
+
 sudo apt update && sudo apt upgrade && apt install docker-compose && sudo apt update && sudo apt install nginx && sudo apt update && sudo apt install certbot && sudo apt install python3-certbot-nginx && sudo apt update
 
 
