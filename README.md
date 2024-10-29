@@ -26,7 +26,7 @@ docker compose run --rm rails bundle exec rails db:chatwoot_prepare
 
 cd && sudo nano /etc/nginx/sites-available/chatwoot
  
- 
+``` 
 server {
  
   server_name chatwoot.dagestao.online;
@@ -54,7 +54,7 @@ server {
 	  }
  
   }
- 
+``` 
 
 sudo ln -s /etc/nginx/sites-available/chatwoot /etc/nginx/sites-enabled
 
