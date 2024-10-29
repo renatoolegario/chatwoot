@@ -1,5 +1,8 @@
 https://www.chatwoot.com/docs/self-hosted/deployment/docker/
 
+
+
+
 sudo apt update && sudo apt upgrade && apt install docker-compose && sudo apt update && sudo apt install nginx && sudo apt update && sudo apt install certbot && sudo apt install python3-certbot-nginx && sudo apt update
 
 
@@ -55,19 +58,23 @@ server {
  
   }
 ``` 
-
+```
 sudo ln -s /etc/nginx/sites-available/chatwoot /etc/nginx/sites-enabled
 
 sudo nginx -t
 sudo service nginx restart
 sudo apt install python3-certbot-nginx
 sudo certbot --nginx
+```
+
 
 cd /opt/chatwoot
 
 docker-compose up -d
 
-
-
+######## Se for pela API Oficial não precisa desses passo abaixo
+https://www.youtube.com/watch?v=Hp_WACLq9Aw
+```
+tem que Instalar o N8N e o Wpp Connect
 
 
